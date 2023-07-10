@@ -1,3 +1,4 @@
+/* JS style */
 *,
 *::before,
 *::after {
@@ -11,6 +12,7 @@
     --hue-correct: 145;
 }
 
+/* Global style */
 body {
     --hue: var(--hue-neutral);
     padding: 0;
@@ -23,6 +25,25 @@ body {
     background-color: hsl(var(--hue), 100%, 20%);
 }
 
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+a {
+    text-decoration: none;
+    color: #af847a;
+}
+
+a:hover {
+    background-color: #af847a;
+    color: #f4f5f1;
+}
+
+/* Headings */
 h2,
 h3 {
     padding: 50px 40px;
@@ -33,22 +54,20 @@ h3 {
     color: #655c68;
 }
 
-#question {
-    padding: 0 50px 50px;
-}
-
 .heading {
     text-align: center;
     font-size: 2.5rem;
     color: #655c68;
 }
 
-body.correct {
-    --hue: var(--hue-correct);
+.logo {
+    height: 65px;
+    padding-right: 5px;
 }
 
-body.wrong {
-    --hue: var(--hue-wrong);
+/* Game layout */
+#question {
+    padding: 0 50px 50px;
 }
 
 .container {
@@ -60,6 +79,7 @@ body.wrong {
     box-shadow: 0 0 10px 2px;
 }
 
+/* Buttons */
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -108,21 +128,7 @@ body.wrong {
     display: none;
 }
 
-.logo {
-    height: 65px;
-    padding-right: 5px;
-}
-
-a {
-    text-decoration: none;
-    color: #af847a;
-}
-
-a:hover {
-    background-color: #af847a;
-    color: #f4f5f1;
-}
-
+/* Media queries */
 @media (max-width: 320px) {
     .container {
         height: 85vh;
@@ -174,8 +180,6 @@ a:hover {
 }
 
 @media (max-width: 428px) {
-
-    /* CSS rules specific to iPhone 13 Pro or devices with similar width */
     .container {
         height: 70vh;
         max-width: 85%;
@@ -227,8 +231,6 @@ a:hover {
 }
 
 @media (max-width: 720px) {
-
-    /* CSS rules specific to iPhone 13 Pro or devices with similar width */
     .container {
         height: 70vh;
         max-width: 85%;

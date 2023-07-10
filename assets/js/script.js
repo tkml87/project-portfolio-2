@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+/* jshint esversion: 6 */
 const headerElement = document.getElementById('header');
 const runButton = document.getElementById('run-btn');
 const nextButton = document.getElementById('next-btn');
@@ -6,95 +6,11 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
+/* let elements */
 let shuffledQuestions;
-let currentQuestionIndex = 0;
+let currentQuestionIndex;
 
-runButton.addEventListener('click', runGame);
-nextButton.addEventListener('click', () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-});
-
-function runGame() {
-    runButton.classList.add('hide');
-    headerElement.classList.add('hide');
-    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-    currentQuestionIndex = 0;
-    questionContainerElement.classList.remove('hide');
-    setNextQuestion();
-}
-
-function setNextQuestion() {
-    resetState();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
-
-}
-
-function showQuestion() {
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNumber = currentQuestionIndex + 1;
-    questionElement.innerText = questionNumber + " - " + currentQuestion.question;
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement('button');
-        button.innerText = answer.text;
-        button.classList.add('btn');
-        if (answer.correct) {
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener('click', selectAnswer);
-        answerButtonsElement.appendChild(button);
-    });
-}
-
-function resetState() {
-    clearStatusClass(document.body);
-    nextButton.classList.add('hide');
-    while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-    }
-}
-
-function selectAnswer(e) {
-    const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct;
-    setStatusClass(document.body, correct);
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct);
-    });
-    if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide');
-    } else {
-        //    resultButton.classList.remove('hide');
-        gotoResult();
-        /*runButton.innerText = 'Restart';
-        runButton.classList.remove('hide');*/
-    }
-}
-
-
-
-function setStatusClass(element, correct) {
-    clearStatusClass(element);
-    if (correct) {
-        element.classList.add('correct');
-    } else {
-        element.classList.add('wrong');
-    }
-}
-
-function clearStatusClass(element) {
-    element.classList.remove('correct');
-    element.classList.remove('wrong');
-}
-
-function gotoResult() {
-    window.location = "result.html";
-    headerElement.classList.add('hide');
-
-    // runButton.innerText = 'Restart';
-}
-
-/*List of the questions*/
+/* List of the questions */
 const questions = [
     {
         question: 'How old is Percy in The Lightning Thief?',
@@ -173,7 +89,7 @@ const questions = [
         answers: [
             { text: 'Her father smote her down with an lightning bolt', correct: false },
             { text: 'She settled down and got married', correct: false },
-            { text: 'She joined Artremis and her Band of Hunters', correct: true },
+            { text: 'She joined Artemis and her Band of Hunters', correct: true },
             { text: 'She left New York and was never heard of again', correct: false }
         ]
     },
@@ -187,3 +103,91 @@ const questions = [
         ]
     }
 ];
+
+/* configuring the buttons */
+runButton.addEventListener('click', runGame);
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+    setNextQuestion();
+});
+
+/* starting the game */
+function runGame() {
+    runButton.classList.add('hide');
+    headerElement.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    questionContainerElement.classList.remove('hide');
+    setNextQuestion();
+}
+
+/* about the questions' phase */
+function setNextQuestion() {
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
+
+function showQuestion() {
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNumber = currentQuestionIndex + 1;
+    questionElement.innerText = questionNumber + " - " + currentQuestion.question;
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
+}
+
+/* logic loop */
+function resetState() {
+    clearStatusClass(document.body);
+    nextButton.classList.add('hide');
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
+
+function selectAnswer(e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    });
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        gotoResult();
+    }
+}
+
+/* game answering conditions */
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('wrong');
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
+}
+
+/* final game */
+function gotoResult() {
+    window.location = "result.html";
+    headerElement.classList.add('hide');
+}
+
+/* restarting game */
+function gotoLink() {
+    location.href = "index.html";
+}
