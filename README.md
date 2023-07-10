@@ -165,7 +165,52 @@ To clone the repository:
 
 ## Testing
 
+"Howling Books" is a podcast of a fictional (werewolf) character who tells stories to werewolves pups around a fire at night in a forest as it is the role of a Galliard of the werewolves. "Howling Quiz" is, then, a continuation of the "Howling Books" project, which aims to bring children's fantasy literature to people who have little time, ADHD, some visual impairment or who just prefer to listen to books. As the first project covered the Percy Jackson saga, the quiz today aims to build understanding and memory of books already recorded.
 
+![General vision of my website in many types of screens](assets/images/responsive.webp)
+[Source](https://ui.dev/amiresponsive?url=https://tkml87.github.io/project-portfolio-2/)
+
+Visit the deployed site: [Howling Quiz](https://tkml87.github.io/project-portfolio-2)
+
+---
+
+## CONTENTS
+
+  - [CONTENTS](#contents)
+  - [AUTOMATED TESTING](#automated-testing)
+    - [W3C Validator](#w3c-validator)
+    - [Lighthouse](#lighthouse)
+
+All during the build, testing was ongoing. While developing, I used the developer tools in Chrome to identify and fix any problems as they arose.
+
+To make sure that each page is fully responsive on a range of different screen sizes and devices, each page has been examined using the Google Chrome Developer Tools, Brave Browser and Tor. On a variety of actual devices, the site's responsiveness was also evaluated.
+
+---
+
+## AUTOMATED TESTING
+
+The Automated Testing includes all the testing that is carried out by a program, like W3C HTML validation.
+
+### W3C Validator
+
+W3C was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
+
+[index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftkml87.github.io%2Fproject-portfolio-2%2F) - Passed.
+
+[result.html](https://validator.w3.org/nu/?showoutline=yes&doc=https%3A%2F%2Ftkml87.github.io%2Fproject-portfolio-1%2Fchap.html) - Passed.
+
+[style.css](assets/images/css.PNG) - Passed.
+
+[script.js]
+
+### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+
+_Desktop Results_
+All pages of the site are achieving a score of more than 90% across the 4 categories.
+
+![Lighthouse Testing](assets/images/readme/light-all.png)
 
 ## Credits
 
