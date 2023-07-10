@@ -176,7 +176,6 @@ Visit the deployed site: [Howling Quiz](https://tkml87.github.io/project-portfol
 
 ## CONTENTS
 
-  - [CONTENTS](#contents)
   - [AUTOMATED TESTING](#automated-testing)
     - [W3C Validator](#w3c-validator)
     - [Lighthouse](#lighthouse)
@@ -201,16 +200,16 @@ W3C was used to validate the HTML on all pages of the website. It was also used 
 
 [style.css](assets/images/css.PNG) - Passed.
 
-[script.js]
+[script.js](assets/images/jshint.PNG) - Passed.
 
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
 _Desktop Results_
-All pages of the site are achieving a score of more than 90% across the 4 categories.
+All pages of the site are achieving a score of 95% or higher across the 4 categories.
 
-![Lighthouse Testing](assets/images/readme/light-all.png)
+![Lighthouse Testing](assets/images/readme/light.png)
 
 ## Credits
 
