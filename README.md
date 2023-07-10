@@ -197,7 +197,7 @@ W3C was used to validate the HTML on all pages of the website. It was also used 
 
 [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftkml87.github.io%2Fproject-portfolio-2%2F) - Passed.
 
-[result.html](https://validator.w3.org/nu/?showoutline=yes&doc=https%3A%2F%2Ftkml87.github.io%2Fproject-portfolio-1%2Fchap.html) - Passed.
+[result.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftkml87.github.io%2Fproject-portfolio-2%2Fresult.html) - Passed.
 
 [style.css](assets/images/css.PNG) - Passed.
 

@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const headerElement = document.getElementById('header');
 const runButton = document.getElementById('run-btn');
 const nextButton = document.getElementById('next-btn');
@@ -5,7 +6,8 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions;
+let currentQuestionIndex = 0;
 
 runButton.addEventListener('click', runGame);
 nextButton.addEventListener('click', () => {
@@ -16,7 +18,7 @@ nextButton.addEventListener('click', () => {
 function runGame() {
     runButton.classList.add('hide');
     headerElement.classList.add('hide');
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
     setNextQuestion();
@@ -25,6 +27,7 @@ function runGame() {
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
+
 }
 
 function showQuestion() {
@@ -61,9 +64,14 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
+        //    resultButton.classList.remove('hide');
         gotoResult();
+        /*runButton.innerText = 'Restart';
+        runButton.classList.remove('hide');*/
     }
 }
+
+
 
 function setStatusClass(element, correct) {
     clearStatusClass(element);
@@ -82,10 +90,8 @@ function clearStatusClass(element) {
 function gotoResult() {
     window.location = "result.html";
     headerElement.classList.add('hide');
-}
 
-function gotoLink() {
-    location.href = "index.html";
+    // runButton.innerText = 'Restart';
 }
 
 /*List of the questions*/
@@ -167,8 +173,8 @@ const questions = [
         answers: [
             { text: 'Her father smote her down with an lightning bolt', correct: false },
             { text: 'She settled down and got married', correct: false },
-            { text: 'She left New York and was never heard of again', correct: false },
-            { text: 'She joined Artemis and her Band of Hunters', correct: true }
+            { text: 'She joined Artremis and her Band of Hunters', correct: true },
+            { text: 'She left New York and was never heard of again', correct: false }
         ]
     },
     {
