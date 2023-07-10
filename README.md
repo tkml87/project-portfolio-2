@@ -2,7 +2,7 @@
 
 "Howling Books" is a podcast of a fictional (werewolf) character who tells stories to werewolves pups around a fire at night in a forest as it is the role of a Galliard of the werewolves. "Howling Quiz" is, then, a continuation of the "Howling Books" project, which aims to bring children's fantasy literature to people who have little time, ADHD, some visual impairment or who just prefer to listen to books. As the first project covered the Percy Jackson saga, the quiz today aims to build understanding and memory of books already recorded.
 
-![General vision of my website in many types of screens](assets/responsive.webp)
+![General vision of my website in many types of screens](assets/images/responsive.webp)
 [Source](https://ui.dev/amiresponsive?url=https://tkml87.github.io/project-portfolio-2/)
 
 Visit the deployed site: [Howling Quiz](https://tkml87.github.io/project-portfolio-2)
