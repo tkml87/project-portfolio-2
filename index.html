@@ -3,53 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Howling quiz, fun for everyone">
+    <meta name="keywords" content="quiz, inclusion, fantasy, fiction, sci-fi, fun">
+    <meta name="author" content="T. K. Moraes de Lima">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+
+    <title>Quiz | Howling books</title>
 </head>
 
 <body>
-    <h1 class="heading">
-        <img class="logo" src="assets/images/logo.png" alt="logo">Love Maths
-    </h1>
-
-    <div class="game-area">
-        <div class="controls-area">
-            <button data-type="addition" class="btn btn--big btn--green">
-                <i class="fas fa-plus"></i>
-            </button>
-            <button data-type="subtract" class="btn btn--big btn--blue">
-                <i class="fas fa-minus"></i>
-            </button>
-            <button data-type="multiply" class="btn btn--big btn--orange">
-                <i class="fas fa-times"></i>
-            </button>
-            <button data-type="division" class="btn btn--big btn--red">
-                <i class="fas fa-divide"></i>
-            </button>
+    <div class="container">
+        <h1 class="heading">
+            <img class="logo" src="assets/icon/android-chrome-192x192.png" alt="logo"> Howling Quiz
+        </h1>
+        <h3 id="header">Test your knowledge about the three first books of Percy Jackson with the next 10 questions!
+            <br>
+            Pick your pen and paper and let's go!
+        </h3>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
         </div>
-        <div class="question-area">
-            <span id="operand1">0</span>
-            <span id="operator">x</span>
-            <span id="operand2">0</span>
-            <span>=</span>
-            <p class="answer-message">Enter Answer:</p>
-            <input id="answer-box" type="number">
+        <div class="controls">
+            <button id="run-btn" class="run-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+            <button id="result-btn" class="result-btn btn hide" onclick="gotoResult(this)"
+                value="result.html">Result</button>
         </div>
-        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
     </div>
-
-    <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span> </p>
-        <p class="scores">Incorrect Answers <span id="Incorrect">0</span></p>
-    </div>
-
     <script src="assets/js/script.js"></script>
 </body>
 
