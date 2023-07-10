@@ -1,34 +1,28 @@
-# HOWLING BOOKS
+# HOWLING QUIZ
 
-"Howling Books" is a podcast of a fictional (werewolf) character who tells stories to werewolves pups around a fire at night in a forest as it is the role of a Galliard of the werewolves.
+"Howling Books" is a podcast of a fictional (werewolf) character who tells stories to werewolves pups around a fire at night in a forest as it is the role of a Galliard of the werewolves. "Howling Quiz" is, then, a continuation of the "Howling Books" project, which aims to bring children's fantasy literature to people who have little time, ADHD, some visual impairment or who just prefer to listen to books. As the first project covered the Percy Jackson saga, the quiz today aims to build understanding and memory of books already recorded.
 
-This website intends to inform the audience about new releases and news about the podcast as the reason why it might get an episode delayed or any announcement that needs to be made to the audience.
+![General vision of my website in many types of screens](assets/images/responsive.webp)
+[Source](https://ui.dev/amiresponsive?url=https://tkml87.github.io/project-portfolio-2/)
 
-![General vision of my website in many types of screens](assets/images/readme/index.webp)
-[Source](https://ui.dev/amiresponsive?url=https://tkml87.github.io/project-portfolio-1/)
-
-Visit the deployed site: [Howling Books](https://tkml87.github.io/project-portfolio-1)
+Visit the deployed site: [Howling Quiz](https://tkml87.github.io/project-portfolio-2)
 
 ---
 
 ## CONTENTS
 
-- [HOWLING BOOKS](#howling-books)
+- [HOWLING QUIZ](#howling-quiz)
   - [CONTENTS](#contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User Stories](#user-stories)
   - [Design](#design)
-    - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
-    - [Imagery](#imagery)
   - [Features](#features)
     - [The Home Page](#the-home-page)
-    - [The Chapters Page](#the-chapters-page)
-    - [The About Me page](#the-about-me-page)
+    - [The Quiz Phase](#the-quiz-phase)
+    - [The Result page](#the-result-page)
     - [The 404 error page](#the-404-error-page)
-    - [The Interactive application form page](#the-interactive-application-form-page)
     - [General features on each page](#general-features-on-each-page)
-    - [Future Implementations](#future-implementations)
     - [Accessibility](#accessibility)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
@@ -42,7 +36,6 @@ Visit the deployed site: [Howling Books](https://tkml87.github.io/project-portfo
   - [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content)
-    - [Media](#media)
     - [Acknowledgments](#acknowledgments)
 
 ---
@@ -71,67 +64,33 @@ The Author asked me for a dramatic webpage, with illustrations of wolves and thi
 
 ## Design
 
-### Colour Scheme
-
-Given the dark atmosphere of a forest, where young werewolves receive their knowledge from the stories told by the pack leader while gathered around a campfire, I have chosen the following color palette:
-![colors used in the website](assets/images/readme/colors.webp)
-[Source](http://colormind.io/bootstrap/)
-
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was my choice for importing fonts to use in my project, as it doesn't require me to download the fonts to use them.
 
-For the same reason, the fonts were chosen accordingly: Creepster to bring suspense in the headings and Lato to make the paragraphs more reader-friendly, since the first font is too heavy for reading long texts.
+The font I chose this time is cleaner and more readable than the first project: Exo makes the text more reader-friendly.
 
-![Font Creepster](assets/images/readme/creep.webp)
-
-[Source](https://fonts.google.com/specimen/Creepster)
-
-![Font Lato](assets/images/readme/lato.webp)
-
-[Source](https://fonts.google.com/specimen/Lato)
-
-### Imagery
-
-All the images used are from one of these sources:
-
-- Public Repository.
-
-- Google search.
-
-- AI generated images, as [Dall-E](https://labs.openai.com/).
-
-- Official medias or web pages of the book read.
-
-When none of these 3 options, the image used is linked to the source and the signature is always left visible when present.
+[Font Exo](https://fonts.google.com/specimen/Exo)
 
 ## Features
 
-The website comprises the "Home" page, the "Chapters" page, the "About Me" page, and a "404 error" page. The "Home" page has a link to an interactive application form page in "the Project" section.
+The website comprises the "Home" page and the "Result" page. The "Home" page has a button link to the interactive quiz that leads the reader through 10 questions to the "Result" section.
 
 ### The Home Page
 
-The home page of Howling Books displays the phrase "Welcome to the Howling Books" as a title and then a section that holds a text summarizing what the project is about. Below this the links to social media and the platforms where the project is posted.
+The home page of Howling Quiz displays the project's name as a title, a quiz call and then and the start button. Unfortunately, a score count wasn't made due to its bad responsiveness.
 
-### The Chapters Page
+### The Quiz phase
 
-The Chapters page displays the phrase "Welcome to the Howling Books" as a title and has a sub-title indicating that here you can find the released chapters as a photo gallery in which each picture links the user to its own chapter.
-![Chapters Page](assets/images/readme/chap.webp)
+The quiz the quiz consists of 10 questions about the first 3 books, with 4 alternatives each, only one of which is correct. To move from one question to another, you need to indicate an answer and click on the "next" button. When you reach the last question, the site automatically opens the "Result" page.
 
-### The About Me page
+### The Result page
 
-The About Me page displays the site's name as a title. It also contains a text about the owner and not the character he portrays during the readings and how he got to do the project. It also has an AI-generated image of a wolf pup with a tophat reading a book.
-![About me Page](assets/images/readme/about.webp)
+The Result page displays the site's name as a title. It also contains a text congratulates the reader on the quiz and has 3 answer choices, depending on how many questions the reader has marked in their notes. In the end, it also contains the author's network links to follow his audiobook work.
 
 ### The 404 error page
 
-The 404 error page also displays the site's name as a title. Within the page container, there is a message explaining to the users that there has a directing error to the page they were looking for. So them can return to the requested page through the three buttons that redirect them to other pages on the site: the Home page, the About Me page, and the Chapters page.
-![The error Page](assets/images/readme/error.webp)
-
-### The Interactive application form page
-
-A book consists of a magical world of characters and plots. The author cannot always perform at his best with the voices necessary to tell a good story. To solve this, within "The Project" section on the home page, there is a link that teleports users to a form that asks for some contact information and the character the user would like to play together with the author in the next book they might narrate together.
-![The Form Page](assets/images/readme/form.webp)
+The 404 error page wasn't required for this project.
 
 ### General features on each page
 
@@ -141,14 +100,6 @@ All Pages on the website are responsive and have:
 
 - The title of the site at the top of every page. This title also acts as a link back to the home page.
 
-- Also the footer of the site at the bottom of every page. It has icons that redirect the user to the social media webpages.
-
-### Future Implementations
-
-Since the podcast audience is mostly Portuguese speakers and listeners, a late addition will be to translate this web page for these users.
-
-Besides that, it is still in the process to add the idea of this [Swiss](https://bionic-reading.com/) company to help dyslexic people to read the site more easily.
-
 ### Accessibility
 
 The author plans to voice reading what is writen for people who are not able to read easily without aid. A change of the colors may happen in the future also, to improve the user's experience.
@@ -157,7 +108,7 @@ The author plans to voice reading what is writen for people who are not able to 
 
 ### Languages Used
 
-HTML and CSS were used to create this website.
+HTML, CSS and Javascript were used to create this websites.
 
 ### Frameworks, Libraries & Programs Used
 
@@ -165,19 +116,19 @@ HTML and CSS were used to create this website.
 
 - [Github](https://github.com/) - To save and store the files for the website.
 
-- [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
-
-- [Font Awesome](https://fontawesome.com/search?o=r&m=free) - For the iconography on the website.
+- [Google Fonts](https://fonts.google.com/specimen/Exo/about) - To import the font Exo used on the website.
 
 - Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 - [Favicon.io](Favicon.io) To create favicon.
 
+- [Conversor JPEG em WEBP](https://onlineconvertfree.com/pt/convert-format/jpeg-to-webp/).
+
 - [Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on a range of devices.
 
 ## Deployment & Local Development
 
-The site is deployed using GitHub Pages - <https://tkml87.github.io/project-portfolio-1/>
+The site is deployed using GitHub Pages - <https://tkml87.github.io/project-portfolio-2/>
 
 ### Deployment
 
@@ -188,7 +139,7 @@ Include instructions here on how to deploy your project. For your first project 
 To Deploy the site using GitHub Pages:
 
 1. Login (or signup) to Github.
-2. Go to the repository for this project, <https://github.com/tkml87/project-portfolio-1> .
+2. Go to the repository for this project, <https://github.com/tkml87/project-portfolio-2> .
 3. Click the settings button.
 4. Select pages in the left hand navigation menu.
 5. From the source dropdown select main branch and press save.
@@ -199,7 +150,7 @@ To Deploy the site using GitHub Pages:
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, <https://github.com/tkml87/project-portfolio-1>
+2. Go to the repository for this project, <https://github.com/tkml87/project-portfolio-2>
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
@@ -207,47 +158,34 @@ To fork the repository:
 To clone the repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, <https://github.com/tkml87/project-portfolio-1>
+2. Go to the repository for this project, <https://github.com/tkml87/project-portfolio-2>
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 ## Testing
 
-Access [here](testing.md).
+
 
 ## Credits
 
 ### Code Used
 
-!!!!!!!!!!!!!!!!!!!!!!!!!! https://github.com/WebDevSimplified/JavaScript-Quiz-App
-!!!!!!!!!!!!!!!!!!!!!!!!!! https://fonts.google.com/specimen/Roboto/tester
+The Javascript codes was mostly based on the codes used in this Github project [WebDevSimplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/tree/master).
 
-The Interactive Application Form page was mostly based on the codes used in this class from [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/4d85cd1a2c57485abbd8ccec8c00732c/).
+For linking Javascript buttons, I used this guide: [How to Create Button With Link in JavaScript | JavaScript Tutorial](https://www.youtube.com/watch?v=xVMkFJZhZYU).
 
-The [Love Running project](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode) also helped me a lot to fulfill the end of this project.
-
-Another big help I had was from [Andy Guttridge](https://github.com/andy-guttridge/tails-up). I was lost about how to create a 404 page.
+The [Love Maths project](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master) also helped me a lot to fulfill the end of this project.
 
 I also had some help from [ChatGPT](https://chat.openai.com/).
 
 ### Content
 
-All the content for the website, such as introduction messages and instructions were written by myself, my husband Luís Eduardo H. de F. Pereira (Client/Owner) and Andreia D'Alessandro (friend/helper).
+All the content for the quiz, such as Q&A and congratulations' message were written by myself and my husband Luís Eduardo H. de F. Pereira (Client/Owner).
 
 This Readme was generated based on the Code Institute instructions [here](https://github.com/Code-Institute-Solutions/SampleREADME). For its sintaxe, the guidance from Github [here](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#syntax). I also followed the instructions [here](https://github.com/kera-cudmore/readme-examples/blob/main/README.md). [Kera Cudmore](https://github.com/kera-cudmore) was a life-saver.
 
 I also used [Grammarly](https://app.grammarly.com/) and [Deepl](https://www.deepl.com/translator) to proofread my content.
-
-### Media
-
-- [Hero Image](https://revistanews.com.br/wp-content/uploads/2023/02/livro-aberto-sobre-uma-mesa.jpg)
-- [Form wallpaper](https://www.reddit.com/r/wallpaper/comments/iv38fo/hogwarts_legacy_3840x2160/)
-- [Wolf with a mug](https://pbs.twimg.com/profile_images/779337798889320452/ydURsTb-.jpg)
-- [Banner with Headphones](https://www.popularmechanics.com/technology/audio/a32227339/wireless-headphone-reviews/)
-- [Conversor JPEG em WEBP](https://onlineconvertfree.com/pt/convert-format/jpeg-to-webp/)
-- About me wolf: [AI](https://labs.openai.com/)-generated image
-- Chapters' Images: official medias or web page from Percy Jackson and the Lightning Thief.
   
 ### Acknowledgments
 
@@ -256,5 +194,3 @@ I would like to acknowledge the following people:
 [Martina Terlević](https://www.linkedin.com/in/martinaterlevic/) - My Code Institute Mentor. Hvala!
 
 [Luís Eduardo H. de F. Pereira](https://www.linkedin.com/in/luis-pereira-9b425452/) - My beloved husband and best friend.
-
-[Andreia D'Alessandro](https://www.linkedin.com/in/andreia-dalessandro/) Thank you.
