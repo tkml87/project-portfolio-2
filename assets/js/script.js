@@ -6,11 +6,11 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
-/* let elements */
+/* global variables elements */
 let shuffledQuestions;
 let currentQuestionIndex;
 
-/* List of the questions */
+/* List of the questions - inspired by webdev simplified */
 const questions = [
     {
         question: 'How old is Percy in The Lightning Thief?',
@@ -104,14 +104,14 @@ const questions = [
     }
 ];
 
-/* configuring the buttons */
+/* configuring the buttons and event listener - inspired by webdev simplified */
 runButton.addEventListener('click', runGame);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
 });
 
-/* starting the game */
+/* starting the game - inspired by webdev simplified */
 function runGame() {
     runButton.classList.add('hide');
     headerElement.classList.add('hide');
@@ -121,7 +121,7 @@ function runGame() {
     setNextQuestion();
 }
 
-/* about the questions' phase */
+/* about the questions' phase - inspired by webdev simplified */
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -143,7 +143,7 @@ function showQuestion() {
     });
 }
 
-/* logic loop */
+/* logic loop - inspired by webdev simplified */
 function resetState() {
     clearStatusClass(document.body);
     nextButton.classList.add('hide');
@@ -166,7 +166,7 @@ function selectAnswer(e) {
     }
 }
 
-/* game answering conditions */
+/* game answering conditions - inspired by webdev simplified */
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -181,13 +181,13 @@ function clearStatusClass(element) {
     element.classList.remove('wrong');
 }
 
-/* final game */
+/* final game - inspired by chart js */
 function gotoResult() {
     window.location = "result.html";
     headerElement.classList.add('hide');
 }
 
-/* restarting game */
+/* restarting game - inspired by chart js */
 function gotoLink() {
     location.href = "index.html";
 }
