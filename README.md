@@ -13,9 +13,7 @@ Visit the deployed site: [Howling Quiz](https://tkml87.github.io/project-portfol
 
 - [HOWLING QUIZ](#howling-quiz)
   - [CONTENTS](#contents)
-  - [User Experience (UX)](#user-experience-ux)
-    - [User Stories](#user-stories)
-  - [Design](#design)
+    - [Design](#design)
     - [Typography](#typography)
   - [Features](#features)
     - [The Home Page](#the-home-page)
@@ -39,28 +37,6 @@ Visit the deployed site: [Howling Quiz](https://tkml87.github.io/project-portfol
     - [Acknowledgments](#acknowledgments)
 
 ---
-
-## User Experience (UX)
-
-Howling Books is an audio-sharing project that makes books more accessible for people with reading difficulty, using mainly Spotify as a platform to publish the audio. As a non-profitable project, it does not make use of any ADs or any means of donation, so it does not ask for donations or monetary help from the audience in any way.
-
-The owner does have a full-time job and other daily matters and is in a distant timezone, and occasionally may not post the weekly update to the podcast.
-
-Key information for the site:
-
-- What are the current book and the chapters uploaded.
-
-- What will be the next book.
-
-- How to help the podcast by participating in the reading voicing over a character.
-
-- A way for people to contact the book club with questions and recommendations.
-
-- Updates on what is coming to the podcast.
-
-### User Stories
-
-The Author asked me for a dramatic webpage, with illustrations of wolves and thing that bring audio rememberance. Dark colors, books and a page to talk about his reasons and lifestyle. He found the site good enough for his beginner's journey, but changes are in sight. Other users were not consulted before the launching.
 
 ## Design
 
@@ -176,9 +152,9 @@ Visit the deployed site: [Howling Quiz](https://tkml87.github.io/project-portfol
 
 ## CONTENTS
 
-  - [AUTOMATED TESTING](#automated-testing)
-    - [W3C Validator](#w3c-validator)
-    - [Lighthouse](#lighthouse)
+- [AUTOMATED TESTING](#automated-testing)
+  - [W3C Validator](#w3c-validator)
+  - [Lighthouse](#lighthouse)
 
 All during the build, testing was ongoing. While developing, I used the developer tools in Chrome to identify and fix any problems as they arose.
 
@@ -209,7 +185,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 _Desktop Results_
 All pages of the site are achieving a score of 95% or higher across the 4 categories.
 
-![Lighthouse Testing](assets/images/readme/light.png)
+![Lighthouse Testing](assets/images/light.png)
 
 ## Credits
 
@@ -230,7 +206,7 @@ All the content for the quiz, such as Q&A and congratulations' message were writ
 This Readme was generated based on the Code Institute instructions [here](https://github.com/Code-Institute-Solutions/SampleREADME). For its sintaxe, the guidance from Github [here](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#syntax). I also followed the instructions [here](https://github.com/kera-cudmore/readme-examples/blob/main/README.md). [Kera Cudmore](https://github.com/kera-cudmore) was a life-saver.
 
 I also used [Grammarly](https://app.grammarly.com/) and [Deepl](https://www.deepl.com/translator) to proofread my content.
-  
+
 ### Acknowledgments
 
 I would like to acknowledge the following people:
