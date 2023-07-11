@@ -153,7 +153,7 @@ Visit the deployed site: [Howling Quiz](https://tkml87.github.io/project-portfol
 ## CONTENTS
 
 - [AUTOMATED TESTING](#automated-testing)
-  - [W3C Validator](#w3c-validator)
+  - [W3C Validator and JSHint](#w3c-validator)
   - [Lighthouse](#lighthouse)
 
 All during the build, testing was ongoing. While developing, I used the developer tools in Chrome to identify and fix any problems as they arose.
@@ -166,7 +166,7 @@ To make sure that each page is fully responsive on a range of different screen s
 
 The Automated Testing includes all the testing that is carried out by a program, like W3C HTML validation.
 
-### W3C Validator
+### W3C Validator and JSHint
 
 W3C was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
